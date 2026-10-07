@@ -1,0 +1,73 @@
+# STM32CubeIDE / Eclipse project files
+.project
+.cproject
+.mxproject
+.settings/
+
+# STM32CubeIDE project configuration files
+*.ioc
+
+# Linker map files
+*.ld
+
+# Clang formatting
+.clang-format
+clang_format_all.bat
+
+# Eclipse metadata
+.tern-project
+.buildpath
+.factorypath
+.loadpath
+
+# Build output
+Debug/
+Release/
+build/
+Build/
+
+# Object files
+*.o
+*.obj
+
+# Dependency files
+*.d
+*.dep
+
+# Executables / binaries
+*.elf
+*.axf
+*.out
+*.bin
+*.hex
+*.map
+
+# Listing / assembly output
+*.lst
+*.list
+
+
+# Debugger / IDE generated files
+*.launch
+
+# STM32CubeIDE / Eclipse temporary files
+*.log
+*.tmp
+*.bak
+
+# Doxygen generated documentation
+Docs/
+
+# OS generated files
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# Editor temporary files
+*.swp
+*.swo
+*~
+EOF
