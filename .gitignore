@@ -7,9 +7,6 @@
 # STM32CubeIDE project configuration files
 *.ioc
 
-# Linker map files
-*.ld
-
 # Clang formatting
 .clang-format
 clang_format_all.bat
