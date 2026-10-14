@@ -1,6 +1,22 @@
 # About
 This is a bare-metal C program that interfaces with an ADXL345 accelerometer and BME280 environmental sensor on the same I2C bus, as well as a 16x2 LCD display from a NUCLEO-C031C6 development board. This repository contains custom-written driver code that interfaces with each device and the Minimal RTOS driver (`miros.h`, `miros.c`) provided by the [Quantum Leaps Embedded Systems Programming Course Lesson 26](https://github.com/QuantumLeaps/modern-embedded-programming-course/tree/main/lesson-26/stm32c031-keil). To interface with the official [BME280 API](https://github.com/boschsensortec/BME280_SensorAPI) provided by Bosch (`bme280.h`, `bme280_defs.h`, `bme280.c`), an additional driver stage (`bme280_intf.h`, `bme280_intf.c`) is implemented. A Python dashboard program, `stm32_display_data.py` that communicates via UART to the MCU is also provided. It is a simple project created as part of my learning journey in embedded systems programming and as such, should not be applied in any professional products.
 
+# Build
+To build this project, use the `Makefile` provided. The following targets and commands are available:
+```bash
+# create output binaries in build/
+make
+
+# or
+make all
+
+# remove /build directory
+make clean
+
+# create output binaries in build/ and flash onto NUCLEO-C031C6 development board
+make flash
+```
+
 # Components
 
 | #   | Component                       |
